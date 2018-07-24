@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
     	<BrowserRouter>
-	      <div className="App">
+	      <div className="App ShadowBox">
 	        <Main />
 	      </div>
 	    </BrowserRouter>
