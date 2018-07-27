@@ -1,13 +1,38 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Breadcrumb, BreadcrumbItem, Progress } from 'reactstrap';
-import Study from './StudyComponent';
 
 function AboutMe(props) {
+
+	const RenderStudy = props.study.map((study) => {
+		return(
+			<div key={study.id}>
+				<div className={study.D + ' boxContainer'}>
+					<div className="box ShadowBox">
+						<h2>{study.date}</h2>
+						<p>* {study.name}.<br/>
+							* {study.School}.<br/>
+							* {study.city}.<br/>
+							* {study.country}.
+						</p>
+					</div>
+				</div>
+			</div>
+			)
+	});
+
+	// const RenderDescription = props.basicme.((basicme) => {
+	// 	return(
+	// 		<div key={basicme.id}>
+	// 		{basicme.description}
+	// 	</div>
+	// 		)
+	// })
+
 	return(
 		<div className="">
-			<div>
-				<Study />
+			<div className="ShadowBox  Header">
+				
 			</div>				
 			<div className="row">
 					<div className="col-12">
@@ -33,12 +58,7 @@ function AboutMe(props) {
 						</div>
 						<div className="description-aboutme about ShadowBox">
 							<div className="padding-30">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								
 								<br/>
 							</div>
 							<div className="padding-30 btn-description">
@@ -49,27 +69,7 @@ function AboutMe(props) {
 						<div className="study-aboutme about">
 							<h2>STUDY</h2>
 							<div className="timeline">
-								<div className="boxContainer left">
-									<div className="box ShadowBox">
-										<h2>2018</h2>
-										<p>Ingeniero de Sistemas<br/>
-										Universidad de Cartagena<br/></p>
-									</div>
-								</div>
-								<div className="boxContainer right">
-									<div className="box ShadowBox">
-									<h2>2018</h2>
-										<p>Ingeniero de Sistemas<br/>
-										Universidad de Cartagena<br/></p>
-									</div>
-								</div>
-								<div className="boxContainer left">
-									<div className="box ShadowBox">
-										<h2>2018</h2>
-										<p>Ingeniero de Sistemas<br/>
-										Universidad de Cartagena<br/></p>
-									</div>
-								</div>
+								{RenderStudy}
 							</div>
 						</div>
 						<div className="skills-aboutme about">

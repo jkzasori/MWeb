@@ -6,6 +6,7 @@ export const STUDY = [
 		School: 'Universidad de Cartagena',
 		city: 'Cartagena - Bolivar',
 		country: 'Colombia',
+		D: 'left',
 		name:  'Ingeniero de Sistemas'
 	},
 	{
@@ -15,6 +16,7 @@ export const STUDY = [
 		School: 'Institución Educativa Felipe Santiago Escobar',
 		city: 'Turbaco - Bolivar',
 		country: 'Colombia',
+		D: 'right',
 		name:  'Bachiller Académico'
 	},
 	{
@@ -24,6 +26,7 @@ export const STUDY = [
 		School: 'Institución Educativa Felipe Santiago Escobar',
 		city: 'Turbaco - Bolivar',
 		country: 'Colombia',
+		D: 'left',
 		name:  'Estudios escolares'
 	}
 ]
