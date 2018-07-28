@@ -17,7 +17,7 @@ export const PPERSONAL = [
 	{
 		id: 3,
 		ipersonalId: 0,
-		ppersonal: 'Ejercicios'
+		ppersonal: 'Fitness'
 	},
 	{
 		id: 4,
@@ -28,10 +28,5 @@ export const PPERSONAL = [
 		id: 5,
 		ipersonalId: 0,
 		ppersonal: 'Pastas'
-	}
-	{
-		id: 6,
-		ipersonalId: 0,
-		ppersonal: 'Música'
 	}
 ]

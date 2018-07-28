@@ -1,6 +1,7 @@
 body{
 	background-color: #f5f5f5;
 	font-size: 16px;
+	color: #616161;
 }
 .Header{
 	height: 370px;
@@ -11,6 +12,12 @@ body{
     background-size: cover;
     background-position: center center;
     background-attachment: fixed
+}
+.black-text{
+	color: #1b1a1af5;
+}
+.white-text{
+	color: white;
 }
 .home {
 	margin-top: 70px;
@@ -26,6 +33,18 @@ body{
     z-index: 100;
     width: 100%;
     top: 0px;
+}
+.container{
+	padding-right: 35px;
+    padding-left: 35px;
+}
+.row {
+	margin-right: 0px; 
+    margin-left: 0px; 
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+	padding-left: 0px;
+	padding-right: 0px;
 }
 .row-content {
 	margin: 0px auto;
@@ -66,7 +85,7 @@ body{
 .header-aboutme .photo-aboutme .img-up {
 	position: absolute;
 	border-style: solid;
-	left: 14px;
+	left: -1px;
 	border-width: 400px 0px 0px 100px;
 	border-color: rgba(255,0,0,0) rgba(255,0,0,0) rgba(255,0,0,0) #00A1C0;
 }
@@ -75,7 +94,30 @@ body{
 	min-height: 400px;
 	max-height: 400px;
 }
-
+.about-basic{
+	height: 400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.about-basic h1{
+	font-size: 34px;
+	font-weight: bold;
+}
+.about-basic p {
+	border: 1px solid white;
+	padding: 20px;
+	text-align: left;
+	color: white;
+	font-style: italic;
+	margin-left: 20px;
+    margin-right: 20px;
+}
+.about-basic p a {
+	color: white;
+}
 .description-aboutme {
 	min-height: 300px;
 	background-color: white;
@@ -200,8 +242,79 @@ body{
 .skills-aboutme {
 	text-align: center;
 }
+.skills-aboutme .skills {
+	position: relative;
+	margin-top: 4em;
+	margin-bottom: 0px;
+}
+.skills-aboutme .skills::before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: -4em;
+	left: 50%;
+	height: 4em;
+	border-left: solid 5px #01618b;
+}
+.skills-aboutme .hblandas .progress-bar{
+	background-color: #94deec;
+}
+.skills-aboutme .name{
+	color: #504d4d;
+}
+.skills-aboutme .lyl .name{
+	background-color: #dc354536;	
+}
+.skills-aboutme .database .name{
+	background-color: #17a2b83b;	
+}
+.skills-aboutme .hblandas .name{
+	background-color: #28a74545;	
+}
+.skills-aboutme .database .progress-bar{
+	background-color: #00a1c0;
+}
+.skills-aboutme .hblandas, .skills-aboutme .database, .skills-aboutme .lyl{
+	/*margin-top: 55px;*/
+	background-color: #ecefed;
+}
+.skills-aboutme .hblandas div, .skills-aboutme .database div, .skills-aboutme .lyl div{
+	border: 1px solid #cce7ec;
+}
+.skills-aboutme .t {
+	background-color: white;
+}
+.skills-aboutme .t h5{
+	margin:15px;
+}
+.hblandas .color, .lyl .color, .database .color{
+	background-color: white;
+	margin: 5px;
+}
+/*like tome*/
 .interest-aboutme {
 	text-align: center;
+}
+.l-cont{
+	background-color: white;
+}
+.liketome {
+	padding: 30px;
+}
+.liketome.b {
+	border-top: 1px solid #e4e4e4;
+}
+.interest-aboutme .likes {
+	color: white;
+	height: 105px;
+	text-align: center;
+	border: 1px solid #e6e5e5;
+	background-color: #00a1c0;
+}
+.interest-aboutme .likes .icon {
+	font-size: 28px;
+	color: red;
+	padding-top: 22px;
 }
 @media (max-width: 770px){
 	.header-aboutme .photo-aboutme {
@@ -231,5 +344,23 @@ body{
 	/*Make all right containers behave like that left ones */
 	.right {
 		left: 0%;
+	}
+}
+@media (max-width: 450px){
+	.about-basic p {
+		font-size: 11px;
+	}
+
+}
+@media (max-width: 365px){
+	.about-basic p {
+		font-size: 10px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+@media (max-width: 320px){
+	.about-basic p {
+		font-size: 8px;
 	}
 }
