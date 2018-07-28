@@ -2,19 +2,19 @@ export const LENGUAJESYLIBRERIAS = [
 	{
 		id: 0,
 		idme: 0,
-		level: 75,
+		level: 92,
 		name: 'HTML5'
 	},
 	{
 		id: 1,
 		idme: 0,
-		level: 75,
+		level: 80,
 		name: 'CSS3'
 	},
 	{
 		id: 2,
 		idme: 0,
-		level: 75,
+		level: 70,
 		name: 'JavaScript'
 	},
 	{
@@ -26,7 +26,7 @@ export const LENGUAJESYLIBRERIAS = [
 	{
 		id: 4,
 		idme: 0,
-		level: 75,
+		level: 60,
 		name: 'Java'
 	},
 	{
@@ -38,19 +38,19 @@ export const LENGUAJESYLIBRERIAS = [
 	{
 		id: 6,
 		idme: 0,
-		level: 75,
+		level: 85,
 		name: 'Bootstrap'
 	},
 	{
 		id: 7,
 		idme: 0,
-		level: 75,
+		level: 87,
 		name: 'Materialize'
 	},
 	{
 		id: 8,
 		idme: 0,
-		level: 75,
+		level: 74,
 		name: 'Foundation'
 	},
 	{
@@ -62,7 +62,7 @@ export const LENGUAJESYLIBRERIAS = [
 	{
 		id: 10,
 		idme: 0,
-		level: 75,
+		level: 50,
 		name: 'ReactNative'
 	}
 ]

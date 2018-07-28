@@ -123,7 +123,7 @@ function AboutMe(props) {
 							<h2 className="black-text">SKILLS</h2>
 							<div className="">
 								<div className="row hblandas ShadowBox">
-								<div className="col-12 t bg-success"><h5 className="white-text">HABILIDADES BLANDAS</h5></div>
+								<div className="col-12 t bg-success"><h5 className="white-text">HABILIDADES SOCIALES Y PERSONAL</h5></div>
 									{RenderHblandas}
 								</div>
 								<div className="skills"></div>
