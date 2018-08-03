@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import Header from './HeaderComponent';
 import Home from './HomeComponent';
 import About from './AboutMeComponent';
-import Projects from './ProjectsComponent';
 import Contact from './ContactComponent';
 import Footer from './FooterComponent';
 import { BASICME } from '../shared/basicMe';
@@ -44,7 +43,6 @@ class Main extends Component{
 				<Switch>
 					<Route path='/home' component={Home}/>
 					<Route path='/aboutme' component={AboutId}/>
-					<Route path='/projects' component={Projects}/>
 					<Route path='/contact' component={Contact}/>
 					<Redirect to='/home' />
 				</Switch>

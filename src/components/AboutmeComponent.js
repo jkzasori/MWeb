@@ -77,15 +77,15 @@ function AboutMe(props) {
 						</Breadcrumb>
 					</div>
 				</div>
-			<div className="container">
+			<div className="container aboutme">
 
 				<div className="row row-content ">
 					<div className="col-12 ">
 						<div className="row header-aboutme about blueMiddle ShadowBox">
 							<div className="col-12 col-md-6 information-aboutme">
 								<div className="about-basic">
-									<h1 className="black-text">{props.basicme.name}</h1>
-									<h5 className="black-text">{props.basicme.profetion}</h5>
+									<h1 className="white-text upper">{props.basicme.name}</h1>
+									<h5 className="white-text upper">{props.basicme.profetion}</h5>
 									<p> <br/>
 									<span >
 										<a className="btn btn-social-icon btn-github" href={"tel:"+props.basicme.tel}><i className="fa fa-phone"></i></a> <a href={"tel:"+props.basicme.tel}>{props.basicme.tel}</a><br/>
@@ -109,18 +109,18 @@ function AboutMe(props) {
 								<br/>
 							</div>
 							<div className="padding-30 btn-description">
-								<button className="btn btn-default ShadowBox"><Link to="/contact">DOWNLOAD CV</Link></button>
-								<button className="btn btn-default ShadowBox"><Link to="/contact"> CONTACT ME</Link></button>
+								<a href="https://drive.google.com/file/d/1wrYRLpacM7vjujgUC2h_qSSJ_tFs9CJu/view?usp=sharing" target="_black" className="btn btn-default ShadowBox">DOWNLOAD CV</a>
+								<Link to="/contact" className="btn btn-default ShadowBox"> CONTACT ME</Link>
 							</div>
 						</div>
 						<div className="study-aboutme about">
-							<h2 className="black-text">STUDY</h2>
+							<h2 className="white-text">STUDY</h2>
 							<div className="timeline">
 								{RenderStudy}
 							</div>
 						</div>
 						<div className="skills-aboutme about">
-							<h2 className="black-text">SKILLS</h2>
+							<h2 className="white-text">SKILLS</h2>
 							<div className="">
 								<div className="row hblandas ShadowBox">
 								<div className="col-12 t bg-success"><h5 className="white-text">HABILIDADES SOCIALES Y PERSONAL</h5></div>
@@ -140,7 +140,7 @@ function AboutMe(props) {
 							</div>
 						</div>
 						<div className="interest-aboutme about">
-							<h2 className="black-text">MY LIKES</h2>
+							<h2 className="white-text">I LOVE</h2>
 							<div className="ShadowBox ">
 								<div className="row l-cont">
 									<div className="col-12 liketome">

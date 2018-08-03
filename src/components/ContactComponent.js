@@ -4,7 +4,7 @@ import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 
 function Contact(props) {
 	return(
-		<div className="">
+		<div className="contact">
 			<div className="row">
 				<div className="col-12">
 					<Breadcrumb>
@@ -13,10 +13,10 @@ function Contact(props) {
 					</Breadcrumb>
 				</div>
 			</div>
-			<div className="container">
-				<div className="row row-content">
-					<div className="col-12">
-						<h3>Información de Contacto</h3>
+			<div className="container text">
+				<div className="row row-content information">
+					<div className="col-12 text-center">
+						<div><h3>Información de Contacto</h3></div>
 					</div>
 					<div className="col-12 col-sm-4 offset-sm-1">
 						<h5>Dirección</h5>
@@ -29,7 +29,7 @@ function Contact(props) {
 						</address>
 					</div>
 					<div className="col-12 col-sm-6 offset-sm-1">
-						<h5>Mapa de Localización</h5>
+						
 					</div>
 					<div className="col-12 col-sm-11 offset-sm-1">
 						<div className="btn-group" role="group">
