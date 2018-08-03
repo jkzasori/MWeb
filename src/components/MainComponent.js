@@ -40,12 +40,12 @@ class Main extends Component{
 		return(
 			<div>
 				<Header />
-				<Switch>
-					<Route path='/home' component={Home}/>
-					<Route path='/aboutme' component={AboutId}/>
-					<Route path='/contact' component={Contact}/>
-					<Redirect to='/home' />
-				</Switch>
+						<Switch location={this.props.location}>
+							<Route path='/home' component={Home}/>
+							<Route exact path='/aboutme' component={AboutId}/>
+							<Route exact path='/contact' component={Contact}/>
+							<Redirect to='/home' />
+						</Switch>
 				<Footer />
 			</div>
 			);

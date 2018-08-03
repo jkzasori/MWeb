@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Breadcrumb, BreadcrumbItem, Progress } from 'reactstrap';
+import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 
 function AboutMe(props) {
 
@@ -22,13 +23,14 @@ function AboutMe(props) {
 	});
 
 	const RenderLikes = props.likes.map((likes) => {
-		return(
-				<div key={likes.id} className="col-sm-4 col-md-2 col-xs-6 likes">
+		return(<Fade in key={likes.id} className="col-sm-4 col-md-2 col-xs-6 likes">
+				
 					<div className="icon">
 						<i className="fa fa-heart"></i>
 					</div>
 					{likes.ppersonal}
-				</div>
+				
+				</Fade>
 			)
 	});
 	const RenderHblandas = props.hblandas.map((hblandas) => {
@@ -81,28 +83,34 @@ function AboutMe(props) {
 
 				<div className="row row-content ">
 					<div className="col-12 ">
-						<div className="row header-aboutme about blueMiddle ShadowBox">
-							<div className="col-12 col-md-6 information-aboutme">
-								<div className="about-basic">
-									<h1 className="white-text upper">{props.basicme.name}</h1>
-									<h5 className="white-text upper">{props.basicme.profetion}</h5>
-									<p> <br/>
-									<span >
-										<a className="btn btn-social-icon btn-github" href={"tel:"+props.basicme.tel}><i className="fa fa-phone"></i></a> <a href={"tel:"+props.basicme.tel}>{props.basicme.tel}</a><br/>
-									</span>
-									<span >
-										<a className="btn btn-social-icon btn-github" href={"mailto:"+props.basicme.email}><i className="fa fa-envelope-o"></i></a> <a href={"mailto:"+props.basicme.email}>{props.basicme.email}</a><br/>
-									</span>
-									<a className="btn btn-social-icon btn-github" href={props.basicme.github} target="_blanck"><i className="fa fa-github"></i></a> <a href={props.basicme.github} target="_blanck">{props.basicme.github}</a><br/>
-									<a className="btn btn-social-icon btn-github" href={props.basicme.linkedin} target="_blanck"><i className="fa fa-linkedin"></i></a> <a href={props.basicme.linkedin} target="_blanck">{props.basicme.linkedin}</a> <br/></p>
+						<FadeTransform
+			                in
+			                transformProps={{
+			                    exitTransform: 'scale(0.9) translateX(-150px)'
+			                }}>
+							<div className="row header-aboutme about blueMiddle ShadowBox">
+								<div className="col-12 col-md-6 information-aboutme">
+									<div className="about-basic">
+										<h1 className="white-text upper">{props.basicme.name}</h1>
+										<h5 className="white-text upper">{props.basicme.profetion}</h5>
+										<p> <br/>
+										<span >
+											<a className="btn btn-social-icon btn-github" href={"tel:"+props.basicme.tel}><i className="fa fa-phone"></i></a> <a href={"tel:"+props.basicme.tel}>{props.basicme.tel}</a><br/>
+										</span>
+										<span >
+											<a className="btn btn-social-icon btn-github" href={"mailto:"+props.basicme.email}><i className="fa fa-envelope-o"></i></a> <a href={"mailto:"+props.basicme.email}>{props.basicme.email}</a><br/>
+										</span>
+										<a className="btn btn-social-icon btn-github" href={props.basicme.github} target="_blanck"><i className="fa fa-github"></i></a> <a href={props.basicme.github} target="_blanck">{props.basicme.github}</a><br/>
+										<a className="btn btn-social-icon btn-github" href={props.basicme.linkedin} target="_blanck"><i className="fa fa-linkedin"></i></a> <a href={props.basicme.linkedin} target="_blanck">{props.basicme.linkedin}</a> <br/></p>
+									</div>
+								</div>
+								<div className=" photo-aboutme col-0 col-md-6">
+									<div className="img-up" >
+									</div>
+									<img src="./assets/profile.jpg" alt="img José Támara"/>
 								</div>
 							</div>
-							<div className=" photo-aboutme col-0 col-md-6">
-								<div className="img-up" >
-								</div>
-								<img src="./assets/profile.jpg" alt="img José Támara"/>
-							</div>
-						</div>
+						</FadeTransform>
 						<div className="description-aboutme about ShadowBox">
 							<div className="padding-30">
 								{props.basicme.description} 
@@ -116,7 +124,7 @@ function AboutMe(props) {
 						<div className="study-aboutme about">
 							<h2 className="white-text">STUDY</h2>
 							<div className="timeline">
-								{RenderStudy}
+									{RenderStudy}
 							</div>
 						</div>
 						<div className="skills-aboutme about">
@@ -149,9 +157,11 @@ function AboutMe(props) {
 										</p>
 									</div>
 									<div className="col-12 liketome b">
-										<div className="row">
+										
+								<Stagger in className="row">
 										{RenderLikes}
-										</div>
+								</Stagger>
+										
 									</div>
 								</div>
 							</div>

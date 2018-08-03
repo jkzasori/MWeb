@@ -32,7 +32,7 @@ export const LENGUAJESYLIBRERIAS = [
 	{
 		id: 5,
 		idme: 0,
-		level: 75,
+		level: 70,
 		name: 'Jquery'
 	},
 	{
@@ -56,7 +56,7 @@ export const LENGUAJESYLIBRERIAS = [
 	{
 		id: 9,
 		idme: 0,
-		level: 75,
+		level: 69,
 		name: 'React.js'
 	},
 	{
