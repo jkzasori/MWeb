@@ -41,7 +41,7 @@ class Main extends Component{
 			<div>
 				<Header />
 						<Switch location={this.props.location}>
-							<Route path='/home' component={Home}/>
+							<Route  path='/home' component={Home}/>
 							<Route exact path='/aboutme' component={AboutId}/>
 							<Route exact path='/contact' component={Contact}/>
 							<Redirect to='/home' />

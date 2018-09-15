@@ -22,22 +22,22 @@ class Header extends Component{
 			<React.Fragment>
 				<Navbar dark expand="md">
 					<div className="container">
-						<NavbarBrand className="mr-auto" href="/">Jkzasori</NavbarBrand>
+						<NavbarBrand className="mr-auto" href="./">Jkzasori</NavbarBrand>
 						<NavbarToggler onClick={this.toggleNav} />
 						<Collapse isOpen={this.state.isNavOpen} navbar>
 							<Nav navbar className="ml-auto">
 								<NavItem>
-									<NavLink className="nav-link" to="/home">
+									<NavLink onClick={this.toggleNav} className="nav-link" to="./home">
 										<span className="fa fa-home fa-lg"></span> Home
 									</NavLink>
 								</NavItem>
 								<NavItem>
-									<NavLink className="nav-link" to="/aboutme">
+									<NavLink onClick={this.toggleNav} className="nav-link" to="./aboutme">
 										<span className="fa fa-info fa-lg"></span> About Me
 									</NavLink>
 								</NavItem>
 								<NavItem>
-									<NavLink className="nav-link" to="/contact">
+									<NavLink onClick={this.toggleNav} className="nav-link" to="./contact">
 										<span className="fa fa-address-card fa-lg"></span> Contact
 									</NavLink>
 								</NavItem>

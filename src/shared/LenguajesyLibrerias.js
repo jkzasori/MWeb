@@ -56,13 +56,31 @@ export const LENGUAJESYLIBRERIAS = [
 	{
 		id: 9,
 		idme: 0,
-		level: 69,
+		level: 71,
 		name: 'React.js'
 	},
 	{
 		id: 10,
 		idme: 0,
-		level: 50,
+		level: 69,
+		name: 'Redux.js'
+	},
+	{
+		id: 11,
+		idme: 0,
+		level: 62,
 		name: 'ReactNative'
+	},
+	{
+		id: 12,
+		idme: 0,
+		level: 65,
+		name: 'Node.js'
+	},
+	{
+		id: 13,
+		idme: 0,
+		level: 65,
+		name: 'Express.js'
 	}
 ]

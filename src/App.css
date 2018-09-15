@@ -368,13 +368,13 @@ h2,h3{
 	color: #504d4d;
 }
 .skills-aboutme .lyl .name{
-	background-color: #dc354536;	
+	background-color: #17a2b83b;	
 }
 .skills-aboutme .database .name{
 	background-color: #17a2b83b;	
 }
 .skills-aboutme .hblandas .name{
-	background-color: #28a74545;	
+	background-color: #17a2b83b;
 }
 .skills-aboutme .database .progress-bar{
 	background-color: #00a1c0;
@@ -382,6 +382,8 @@ h2,h3{
 .skills-aboutme .hblandas, .skills-aboutme .database, .skills-aboutme .lyl{
 	/*margin-top: 55px;*/
 	background-color: #ecefed;
+	align-items: center;
+    justify-content: space-evenly;
 }
 .skills-aboutme .hblandas div, .skills-aboutme .database div, .skills-aboutme .lyl div{
 	border: 1px solid #cce7ec;
@@ -418,7 +420,7 @@ h2,h3{
 }
 .interest-aboutme .likes .icon {
 	font-size: 28px;
-	color: red;
+	color: #f12135;
 	padding-top: 22px;
 }
 .contact {

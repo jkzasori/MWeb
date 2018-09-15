@@ -11,10 +11,11 @@ function AboutMe(props) {
 				<div className={study.D + ' boxContainer'}>
 					<div className="box ShadowBox">
 						<h2>{study.date}</h2>
-						<p>* {study.name}.<br/>
-							* {study.School}.<br/>
-							* {study.city}.<br/>
-							* {study.country}.
+						<h6 className="text-black font-weight-bold">{study.name}.</h6>
+						<p className="text-left">
+							* <span className="text-info font-weight-bold">Intitución:</span> {study.School}.<br/>
+							* <span className="text-info font-weight-bold">Ciudad:</span> {study.city}.<br/>
+							* <span className="text-info font-weight-bold">País:</span> {study.country}.
 						</p>
 					</div>
 				</div>
@@ -37,8 +38,8 @@ function AboutMe(props) {
 		return(
 			<div key={hblandas.id} className="col-sm-4 col-md-2 col-xs-6 color">
 				<div className="sk-h ">
-					<div className="text-center">{hblandas.name}</div>
-					<Progress animated color="success" value={hblandas.level}/>
+					<div className="text-center font-weight-bold">{hblandas.name}</div>
+					<Progress animated color="info" value={hblandas.level}/>
 					<div className="text-center name">{hblandas.level}%</div>
 					</div>
 			</div>
@@ -48,8 +49,8 @@ function AboutMe(props) {
 		return(
 			<div key={database.id} className="col-sm-4 col-md-2 col-xs-6 color">
 				<div className="sk-h ">
-					<div className="text-center">{database.name}</div>
-					<Progress animated  value={database.level}/>
+					<div className="text-center font-weight-bold">{database.name}</div>
+					<Progress animated color="success" value={database.level}/>
 					<div className="text-center name">{database.level}%</div>
 					</div>
 			</div>
@@ -59,9 +60,9 @@ function AboutMe(props) {
 		return(
 			<div key={lyl.id} className="col-sm-4 col-md-2 col-xs-6 color">
 				<div className="sk-h ">
-					<div className="text-center">{lyl.name}</div>
+					<div className="text-center font-weight-bold">{lyl.name}</div>
 					<Progress animated color="danger" value={lyl.level}/>
-					<div className="text-center name">{lyl.level}%</div>
+					<div className="text-center name ">{lyl.level}%</div>
 					</div>
 			</div>
 			)
@@ -112,7 +113,7 @@ function AboutMe(props) {
 							</div>
 						</FadeTransform>
 						<div className="description-aboutme about ShadowBox">
-							<div className="padding-30">
+							<div className="padding-30 text-justify">
 								{props.basicme.description} 
 								<br/>
 							</div>
@@ -131,12 +132,12 @@ function AboutMe(props) {
 							<h2 className="white-text">SKILLS</h2>
 							<div className="">
 								<div className="row hblandas ShadowBox">
-								<div className="col-12 t bg-success"><h5 className="white-text">HABILIDADES SOCIALES Y PERSONAL</h5></div>
+									<div className="col-12 t bg-info"><h5 className="white-text">HABILIDADES SOCIALES Y PERSONAL</h5></div>
 									{RenderHblandas}
 								</div>
-								<div className="skills"></div>
+									<div className="skills"></div>
 								<div className="row database ShadowBox ">
-								<div className="col-12 t bg-info"><h5 className="white-text">BASE DE DATOS</h5></div>
+								<div className="col-12 t bg-success"><h5 className="white-text">BASE DE DATOS</h5></div>
 									{RenderDatabase}
 								</div>
 								<div className="skills"></div>
@@ -152,7 +153,7 @@ function AboutMe(props) {
 							<div className="ShadowBox ">
 								<div className="row l-cont">
 									<div className="col-12 liketome">
-										<p>
+										<p className="text-justify">
 											{props.basicme.liketome}
 										</p>
 									</div>

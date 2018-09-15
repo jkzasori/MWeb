@@ -2,13 +2,13 @@ export const DATABASE = [
 	{
 		id: 0,
 		idme: 0,
-		level: 50,
+		level: 70,
 		name: 'MongoDB'
 	},
 	{
 		id: 1,
 		idme: 0,
-		level: 65,
+		level: 76,
 		name: 'SQL'
 	},
 	{
